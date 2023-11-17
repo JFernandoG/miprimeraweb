@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Comic Neue', cursive;
+}
+
+.container {
+    margin: 5px;
+    background-color: rgb(219, 215, 228);
+    /*border: 10px solid black;*/
+    font-family: cursive;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(86, 161, 83);
+    border: 1px solid black;
+    padding: 20px;
+}
+
+/* Estilos para pantallas más pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más pequeñas */
+    header {
+        display: flex;
+        background-color: rgb(101, 161, 83);
+    }
+
+    .acerca-de {
+        text-align: center;
+    }
+
+    .acerca-imgen {
+        margin-bottom: 40px;
+    }
+
+    h2.fuente-acento {
+        text-align: center;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    #encabezado ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #73AD21;
+        top: 80px;
+        left: 100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    #check:checked~ul {
+        left: 0%;
+        display: block;
+    }
+
+    #encabezado nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    #encabezado nav ul li a {
+        font-size: 20px;
+    }
+
+    #check:checked~.checkbtn {
+        color: blue;
+    }
+}
+
+/*head nav ul li a{    color: blueviolet;}*/
+
+nav {
+    display: flex;
+    justify-content: end;
+    margin-right: 30px;
+}
+
+/* quitar viñetas */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 0.5em;
+    /*espacio entre contenedores */
+}
+
+/* Menu */
+#check {
+    display: none;
+}
+
+.checkbtn {
+    font-size: 25px;
+    /* color: white; */
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    /*display: none;*/
+}
+
+@media (min-width: 769px) {
+
+    /* Aquí puedes escribir los estilos que se aplicarán en pantallas más grandes */
+    .checkbtn {
+        display: none;
+    }
+
+    header {
+        background-color: ghostwhite;
+    }
+}
+
+a:link,
+a:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.seccion-1 {
+    display: flex;
+    padding: 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.acerca-de {
+    width: 50%;
+    border: 1px solid black;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: auto;
+}
+
+.acerca-de h2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.acerca-de p {
+    text-align: justify;
+    padding: 20px;
+}
+
+.acerca-imgen {
+    /*width: 50%; */
+    /*position:fixed;*/
+    border: 3px solid #73AD21;
+    right: 100px;
+    display: flex;
+    justify-content: center;
+    border-style: dotted;
+}
+
+.seccion-2 {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    /* width: 100%; */
+    size: 10%;
+}
+
+/*--------------------------------------------------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    /* background-color: rgb(148, 188, 240); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a i {
+    color: rgb(255, 0, 98);
+    font-size: 3em;
+    padding: 0.5em;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1.5em;
+}
+
+header nav ul li {
+    color: darkviolet;
+}
+
+/*--------------------------------------------------------*/
+/* seccion 3 Trabajos */
+
+.Trabajos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(204, 12, 12);
+}
+
+.caja {
+    width: 25%;
+    height: 100%;
+    padding: 40px;
+    border: 1px solid black;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 50% 20% / 10% 40%;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+/*   p {
+    font-size: 1em;
+  } */
+
+h1 {
+    padding: 20px;
+    color: green;
+}
+
+/*--------------------------------------------------------*/
+/* footer */
+
+footer {
+    background-color: rgb(206, 203, 203);
+    text-align: center;
+    padding: 20px;
+}
+
+footer h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: #000000;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer #Contacto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer #Contacto i {
+    margin: 0 10px;
+}
+
+/* ------------- CSS General ------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #5d6063;
+    background-color: #eaedf0;
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+}
+
+/* ------------- Encabezado Contacto ------------- */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-header {
+    text-align: center;
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+
+    width: 80%;
+    margin: 10px auto;
+    padding: 50px;
+}
+
+.form-header h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* ------------- Formulario ------------- */
+
+.formulario {
+    background-color: #f6f7f8;
+    border: 1px solid #d6d9dc;
+    border-radius: 3px;
+
+    width: 80%;
+    padding: 50px;
+    margin: 30px 0 40px 0;
+}
+
+/* ------------- Campos del Formulario ------------- */
+
+.form-row {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"] {
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
+}
+
+.form-row label {
+    margin-bottom: 3px;
+    text-align: initial;
+}
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+@media only screen and (min-width: 700px) {
+    .form-header {
+        padding: 50px;
+    }
+
+    .form-row {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    .form-row input[type="text"],
+    .form-row input[type="email"]  {
+        width: 250px;
+        height: initial;
+    }
+
+    .form-row label {
+        text-align: right;
+        width: 120px;
+        margin-top: 7px;
+        padding-right: 20px;
+    }
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.form-row textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    font-size: 14px;
+
+
+    background-color: #bdbdbd;
+    border: 0;
+    border-radius: 6px;
+
+
+    min-height: 200px;
+    margin-bottom: 10px;
+    padding: 7px;
+    resize: none;
+
+
+    width: 100%;
+}
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+
+
+.form-row textarea {
+    width: 250px;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.form-row button {
+    font-size: 16px;
+    font-weight: bold;
+
+
+    color: #ffffff;
+    background-color: #5995da;
+
+
+    border: none;
+    border-radius: 3px;
+
+
+    padding: 10px 40px;
+    cursor: pointer;
+}
+
+
+.form-row button:hover {
+    background-color: #76aeed;
+}
+
+
+.form-row button:active {
+    background-color: #407fc7;
+}
+
+
+/* ------------- Para Pantallas de más de 700px ------------- */
+
+
+.form-row button {
+    margin-left: 120px;
